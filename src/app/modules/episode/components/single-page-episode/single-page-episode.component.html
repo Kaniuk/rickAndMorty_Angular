@@ -1,0 +1,10 @@
+<button class="button_back"><a routerLink="/episodes">back</a></button>
+<div *ngIf="characters" class="characters">
+  <div *ngFor="let character of characters" class="episode_details">
+    <img src="{{character.image}}" alt="image">
+    <div>NAME:{{character.name}}</div>
+    <div>GENDER:{{character.gender}}</div>
+    <div>SPECIES:{{character.species}}</div>
+    <div>STATUS:{{character.status}}</div>
+  </div>
+</div>

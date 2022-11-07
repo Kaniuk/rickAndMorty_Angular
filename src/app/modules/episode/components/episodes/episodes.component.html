@@ -1,0 +1,8 @@
+<div class="episodes">
+  <app-episode *ngFor="let episode of episodes" [episode]='episode'></app-episode>
+  <router-outlet></router-outlet>
+</div>
+<div class="pagination">
+  <button *ngIf="pageInfo?.prev" (click)="getPrevPage()">prev</button>
+  <button *ngIf="pageInfo?.next" (click)="getNextPage()">next</button>
+</div>
